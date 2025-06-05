@@ -2,6 +2,10 @@
 <!-- email: ronicksamuel@gmail.com -->
 <!-- password: utk4k)"iP,z7XZ5 -->
 
+<!-- clound loging details -->
+<!-- email: ronicksamuel@gmail.com -->
+<!-- password: iTmJt72sYhj6GSu -->
+
 # n8n with PostgreSQL
 
 Starts n8n with PostgreSQL as database.
