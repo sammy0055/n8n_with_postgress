@@ -34,7 +34,7 @@ services:
       - DB_POSTGRESDB_USER=${POSTGRES_NON_ROOT_USER}
       - DB_POSTGRESDB_PASSWORD=${POSTGRES_NON_ROOT_PASSWORD}
       - N8N_SECURE_COOKIE=false
-      - WEBHOOK_URL=http://34.76.197.12:5678
+      - WEBHOOK_URL=https://hosted-n8n.duckdns.org
     ports:
       - 5678:5678
     links:
