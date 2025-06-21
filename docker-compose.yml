@@ -1,9 +1,5 @@
 version: '3.8'
 
-volumes:
-  db_storage:
-  n8n_storage:
-
 services:
   postgres:
     image: postgres:16
@@ -55,5 +51,7 @@ services:
       - caddy_config:/config
 
 volumes:
+  db_storage:
+  n8n_storage:
   caddy_data:
   caddy_config:
