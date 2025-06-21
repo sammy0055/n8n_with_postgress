@@ -26,8 +26,6 @@ services:
   n8n:
     image: docker.n8n.io/n8nio/n8n
     restart: always
-    ports:
-      - "5678:5678"
     environment:
       - DB_TYPE=postgresdb
       - DB_POSTGRESDB_HOST=postgres
@@ -44,3 +42,18 @@ services:
         condition: service_healthy
     volumes:
       - n8n_storage:/home/node/.n8n
+
+  caddy:
+    image: caddy:2
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
