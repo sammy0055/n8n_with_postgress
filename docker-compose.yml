@@ -36,9 +36,7 @@ services:
       - DB_POSTGRESDB_USER=${POSTGRES_NON_ROOT_USER}
       - DB_POSTGRESDB_PASSWORD=${POSTGRES_NON_ROOT_PASSWORD}
       - N8N_SECURE_COOKIE=false
-      - WEBHOOK_URL=https://n8n.naetechween.com
-      - N8N_HOST=n8n.naetechween.com
-      - N8N_PORT=5678
+      
     links:
       - postgres
     volumes:
