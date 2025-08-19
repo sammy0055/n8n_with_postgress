@@ -39,8 +39,7 @@ services:
       - WEBHOOK_URL=https://n8n.naetechween.com
       - N8N_HOST=n8n.naetechween.com
       - N8N_PORT=5678
-    expose:
-      - "5678"
+   
     links:
       - postgres
     volumes:
